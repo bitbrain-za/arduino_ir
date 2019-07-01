@@ -8,7 +8,7 @@ Little IR transmitter for Arduino Mini Pro for use in another project
 
 UART comms at 5V, only receives.
 
-###Protocol
+### Protocol
   - Start char:'S' 
   - Command (byte)
     - Send a preprogrammed code = 0x04,
@@ -18,12 +18,12 @@ UART comms at 5V, only receives.
   - End with a comma
 
 
-####Sending a known code
+#### Sending a known code
  S04,XX,YY,
  - XX: code id
  - YY: Number of repeats <FF> is continuous
 
-####Sending an unknown code
+#### Sending an unknown code
  S07,YY,MMMM,SSSS,MMMM,SSSS...
  - YY: Number of repeats <FF> is continuous
  - MMMM is a mark duration in microseconds
